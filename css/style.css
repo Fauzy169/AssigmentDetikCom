@@ -34,6 +34,42 @@ body {
     color: #fff;
     border-radius: 4px;
 }
+/* Navbar untuk Halaman Baru */
+.navbar-new-page {
+  background-color: transparent; /* Pertahankan latar belakang transparan jika diinginkan */
+}
+
+.navbar-new-page .nav-link {
+  color: black; /* Ubah warna teks link menjadi hitam */
+}
+
+.navbar-new-page .nav-link:hover {
+  color: #333; /* Warna teks link saat hover jika diinginkan */
+}
+
+.navbar-new-page .navbar-brand .logo-text,
+.navbar-new-page .navbar-brand .logo-text2 {
+  color: black; /* Ubah warna teks logo menjadi hitam */
+}
+
+.navbar-new-page .btn-secondary {
+  background-color: #5468E780; /* Warna tombol tetap sama atau disesuaikan jika perlu */
+  color: #fff; /* Warna teks tombol tetap putih */
+}
+
+.navbar-new-page .btn-secondary:hover {
+  background-color: #5468E7; /* Warna tombol saat hover tetap sama atau disesuaikan */
+}
+
+.content h1 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.blogs {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 
 /* Hero Section */
 #hero {
@@ -117,79 +153,422 @@ body {
     background-color: #0056b3; /* Darker color on hover */
   }
   
-  /* Working Space */
+ /* Working Space */
 
-  .workingspace {
-    margin-top: 80px;
-    margin-left: 140px;
-  }
-  .workingspace h3 {
+ .Worksection {
+  padding: 3rem 0;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.image-column {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px
+}
+
+.image-container img {
+  width: 1050px;
+  height: auto;
+}
+
+.workingspace{
+  margin-left: 140px;
+}
+  .workingspace h1 {
     color: #000;
     font-weight: 700;
     font-size: 50px;
-    line-height: 64px;
-    margin-top: 160px;
-    max-width: 80%;
   }
+
   .workingspace p {
     margin-top: 24px;
     margin-bottom: 48px;
     color: #000;
     font-weight: 300;
     font-size: 18px;
-    line-height: 27px;
-    max-width: 65%;
+    max-width: 85%;
+  }
+  .workingspace a {
+    font-weight: 500;
+    font-size: 18px;
   }
   .workingspace btn {
     background-color: none;
   }
 
-  .col.text-column {
-    max-width: 40%;
-    padding-right: 20px; /* Jarak antar kolom, opsional */
+  .text-column {
+    max-width: 30%;
 }
 
-.col.image-column {
-    flex: 6; /* 70% jika total flex 10 */
-    max-width: 60%;
-}
+  .image-column {
+      max-width: 70%;
+      color: #000;
+  }
 
-  .image-container {
+.work-section {
     position: relative;
-    width: 90%;
-  }
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.dashboard {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section h3 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-left: 120px;
+}
+.section p {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  margin-left: 120px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  line-height: 27px;
+  max-width: 70%;
+}
+.section a {
+  margin-left: 120px;
+}
+
+.section img {
+  border-radius: 10px;
+}
+.floating-box {
+  position: absolute;
+  background-color: none;
+  border-radius: 10px;
+  padding: 10px;
   
-  .image-container img {
-    position: absolute;
-  }
+}
+.floating-box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.floating-box-1 {
+  top: 5%;
+  right: 15%;
+  width: 300px;
+}
+.floating-box-2 {
+  position: absolute;
+  padding: 10px;
+  bottom: 5%;
+  right: 15%;
   
-  .dashboard {
-    width: 100%; 
-    height: auto;
-    top: 0;
-    left: 15%;
-  }
+}
+.floating-box-2 img {
+  height: 100%;
+  width: 100%;
+}
+.floating-box-3 {
+  position: absolute;
+  padding: 10px;
+  top: 40%;
+  right: 15%;
   
-  .task-today {
-    width: 30%;
-    top: 20%; 
-    left: 0%;
-    z-index: 1; /* Gambar ini berada di belakang gambar dashboard */
-  }
+}
+.floating-box-3 img {
+  height: 100%;
+  width: 100%;
+}
+
+.floating-box-4 {
+  position: absolute;
+  padding: 10px;
+  top: 40%;
+  left: 5%;
   
-  .mentors {
-    width: 50%; /* Atur lebar gambar sesuai kebutuhan */
-    height: auto;
-    top: 470px;
-    left: 0%;
-    z-index: 2; /* Gambar ini berada di atas gambar dashboard */
-  }
+}
+.floating-box-4 img {
+  height: 100%;
+  width: 100%;
+}
+.floating-box-5 {
+  position: absolute;
+  padding: 10px;
+  bottom: 5%;
+  left: 5%;
   
-  .send {
-    width: 10%; /* Atur lebar gambar sesuai kebutuhan */
-    height: auto;
-    top: 460px; 
-    left: 40%;
-    z-index: 3; /* Gambar ini berada di atas gambar mentors */
-  }
+}
+.floating-box-5 img {
+  height: 100%;
+  width: 100%;
+}
+.section02 h3 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-left: 0px;
+  max-width: 80%;
+}
+.section02 p {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  line-height: 27px;
+  max-width: 70%;
+}
+.section02 a {
+  margin-left: 0px;
+}
+
+/* Atur tampilan card */
+.testimonial-card {
+  flex-shrink: 0;
+  max-width: 18rem; /* Max width disesuaikan */
+  height: 100%; /* Sama tingginya untuk semua card */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 15px; /* Menambahkan padding untuk jarak antara konten dan tepi card */
+  margin-right: 30px;
+
+}
+/* Atur bintang */
+.stars {
+  font-size: 1.5rem;
+  color: gold;
+}
+
+/* Foto pemberi testimoni */
+.testimonial-photo {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+
+.fotos {
+  width: 60px; 
+  height: 60px;
+}
+
+/* Mengatur elemen di dalam card */
+.testimonial-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Untuk mencegah card terlalu kecil */
+.card-text {
+  flex-grow: 1;
+}
+
+.names {
+  margin-left: 15px;
+}
+
+.footer {
+  background-color: #1D1E3C;
+  color: white;
+  padding: 60px 0;
+}
+
+.footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #5468E7;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.footer .newsletter input[type="email"] {
+  background-color: #3D3E66;
+  border: none;
+  padding: 10px;
+  color: white;
+  width: 70%;
+  margin-right: -5px;
+  border-radius: 4px 0 0 4px;
+  margin-top: 10px;
+}
+
+.footer .newsletter button {
+  background-color: #3D3E66;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  margin-top: 10px;
+}
+
+
+.footer .row > div {
+  margin-bottom: 20px;
+}
+
+.footer .text-center {
+  border-top: 1px solid #3D3E66;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.logo{
+  width: 170px;
+  margin-right: 130px ;
+}
+
+/* Blog Card */
+.blog-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 350px;
+  margin: auto;
+}
+
+/* Blog Card Image */
+.blog-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Blog Card Content */
+.blog-card-content {
+  padding: 20px;
+}
+
+.blog-card-content h3 {
+  font-size: 1.2rem;
+  color: #5468E7;
+  margin: 0 0 10px;
+}
+
+.blog-card-content p {
+  font-size: 0.95rem;
+  color: #5A5A5A;
+  margin: 0 0 20px;
+}
+
+/* Blog Card Footer */
+.blog-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.author-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-info span {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.date-info span {
+  font-size: 0.8rem;
+  color: #8A8A8A;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.card img {  
+  width: 100%;
+  height: 200px; /* Tinggi gambar tetap */
+  object-fit: cover; /* Menjaga rasio gambar tetap */
+}
+
+.card-body {
+  flex: 1; /* Mengatur card-body agar mengisi ruang yang tersisa */
+  display: flex;
+  flex-direction: column;
+  min-height: 150px; /* Atur sesuai kebutuhan */
+}
+.card-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #5468E7;
+  line-height: 30px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 24px;
   
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.card-footer {
+  background-color: white;
+  padding: 10px;
+  font-size: 14px; 
+}
+
+.card-footer img {
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  width: 40px; /* Lebar gambar */
+  height: 40px; /* Tinggi gambar */
+}
+
+.card-footer span {
+  margin: 0 5px; /* Jarak horizontal antar elemen span */
+}
+
+.card-footer .divider {
+  margin: 0 10px; /* Jarak horizontal di sekitar divider */
+}
+
+.tombol {
+height: 47px;
+width: 200px;
+background-color:#5468E780 ;
+color: #000;
+opacity: 50%;
+}
+

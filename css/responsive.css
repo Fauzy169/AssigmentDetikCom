@@ -1,0 +1,280 @@
+/* Responsif CSS */
+
+/* Mengatur font-size yang lebih kecil pada layar kecil */
+@media (max-width: 1200px) {
+    .logo-text,
+    .logo-text2 {
+        font-size: 2.5rem;
+    }
+    .hero-tagline h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .text-column, .image-column {
+      max-width: 100%; /* Make both columns full width */
+      margin-left: 0; /* Remove margin for smaller screens */
+      text-align: center; /* Center text in smaller screens */
+    }
+  
+    .text-column {
+      padding: 0 15px; /* Add some padding for better spacing */
+    }
+  
+    .image-container img {
+      width: 100%; /* Ensure image fits container */
+    }
+  
+    .workingspace {
+        margin: 0px;
+      flex-direction: column-reverse; /* Stack columns vertically */
+      align-items: left; /* Center content horizontally */
+    }
+  
+    .workingspace h1 {
+        margin-top: 48px;
+    align-items: start;
+    text-align: left;
+      font-size: 50px; /* Adjust font size for smaller screens */
+    }
+  
+    .workingspace p {
+        text-align: left;
+      font-size: 16px; /* Adjust font size for smaller screens */
+      max-width: 100%; /* Ensure text width fits container */
+    }
+  
+    .workingspace a.button {
+        text-align: left;
+      font-size: 16px; /* Adjust button font size */
+    }
+
+    .workingspace img {
+        margin-top: 60px;
+    }
+
+    .kata h{
+        margin-left: 0px;
+    }
+
+/* Set height and alignment for sections */
+.section {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ensure both columns take up half of the container */
+  .section .col-md-6 {
+    flex: 1;
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  /* Adjust image sizes to fit half of the container */
+  .position-relative img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Prevent image from exceeding its container */
+  }
+  
+  /* Set padding for text columns */
+  .kata, .section02 {
+    padding: 0; /* Adjust as needed for spacing */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  .kata h3,.kata a{
+    padding: 0;
+    margin : 0;
+  }
+  .kata p{
+    padding: 0;
+    margin :0;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  
+  /* Make sure floating boxes align with their parent image */
+  .position-relative .gambar {
+    position: relative;
+    height: 100px;
+  }
+  
+  .floating-box {
+    position: absolute;
+    /* Adjust size and positioning as needed */
+  }
+  
+  .floating-box-1 {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .floating-box-2 {
+    top: 0%;
+    start: 0%;
+  }
+  
+  .floating-box-3 {
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .floating-box-4 {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .floating-box-5 {
+    top:20%;
+    left: 10%;
+
+  }
+  
+  /* Adjust image size of floating boxes to match parent image */
+  .floating-box img {
+    width: 50%; /* Ensure floating image fits its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .section h3 {
+    margin-top: 64px;
+    font-size: 34px;
+  }
+  .section p {
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  .gambar h3 {
+    margin-top: 64px;
+    font-size: 34px;
+  }
+  .gambar p {
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+    }
+@media (max-width: 320px) {
+
+    .text-column, .image-column {
+        max-width: 100%; /* Make both columns full width */
+        margin-left: 0; /* Remove margin for smaller screens */
+        text-align: center; /* Center text in smaller screens */
+      }
+    
+      .text-column {
+        padding: 0 15px; /* Add some padding for better spacing */
+      }
+    
+      .image-container img {
+        width: 500px;
+        start :1500% /* Ensure image fits container */
+      }
+    
+      .workingspace {
+          margin: 0px;
+        flex-direction: column-reverse; /* Stack columns vertically */
+        align-items: left; /* Center content horizontally */
+      }
+    
+      .workingspace h1 {
+          margin-top: 48px;
+          align-items: start;
+          text-align: left;
+        font-size: 34px; 
+      }
+    
+      .workingspace p {
+          text-align: left;
+        font-size: 16px; /* Adjust font size for smaller screens */
+        max-width: 100%; /* Ensure text width fits container */
+      }
+    
+      .workingspace a.button {
+          text-align: left;
+        font-size: 16px; /* Adjust button font size */
+      }
+  
+      .workingspace img {
+          margin-top: 60px;
+      }
+  
+      .kata h{
+          margin-left: 0px;
+      }
+      .gambar img{
+        width: ;
+      }
+  
+      .section {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .position-relative {
+        position: relative;
+      }
+      
+      .position-relative img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .floating-box {
+        position: absolute;
+      }
+      
+      .floating-box-1 {
+        top: 10px;
+        left: 90px;
+        width: 50%;
+      }
+      .kata {
+        padding: 0px;
+      }
+      .kata h3 {
+        font-size: 34px;
+      }
+      
+      .floating-box-2 {
+        top: 10px;
+        right: 10px;
+      }
+      
+      .floating-box-3 {
+        bottom: 10px;
+        left: 10px;
+      }
+      
+      .floating-box-4 {
+        bottom: 10px;
+        right: 10px;
+      }
+      
+      .floating-box-5 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .floating-box img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .section02 {
+        padding: 0 56px;
+        box-sizing: border-box;
+      }
+      
+      /* Ensure responsiveness */
+      @media (max-width: 768px) {
+        .position-relative img {
+          width: 100%;
+        }
+      }
+    }
